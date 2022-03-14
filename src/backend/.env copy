@@ -1,3 +1,0 @@
-JWT_SECRET="sekr"
-JWT_EXPIRE=30d
-DATABASE_URL=postgres://buxzigtl:TrCMBhQg4SXZC7-xZ9ImUAIES6XYJQoj@dumbo.db.elephantsql.com/buxzigtl
