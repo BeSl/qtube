@@ -43,13 +43,14 @@ const Wrapper = styled.div`
 const VideoCard = ({ nousername, hideavatar, video }) => {
   return (
     <Wrapper>
-      <img className="thumb" src={video.thumbnail} alt="thumbnail" />
+      <img className="thumb" src={"http://192.168.1.109:8000/" + video.thumbnail} alt="thumbnail" />
       <div className="video-info-container">
         <div className="channel-avatar">
           {!hideavatar && (
             <Avatar
               style={{ marginRight: "0.8rem" }}
-              src={"http://192.168.1.109:8000/"+video.User.avatar}
+              //src={"http://192.168.1.109:8000/" + video.User.avatar}
+              src={'http://192.168.1.109:8000/ava.png'}
               alt="Аватар канала"
             />
           )}
@@ -65,7 +66,7 @@ const VideoCard = ({ nousername, hideavatar, video }) => {
           )}
           <p className="secondary">
             <span>{video.views || 0} просмотров</span> <span>•</span>{" "}
-            <span>{timeSince(video.createdAt)} ago</span>
+            <span>{timeSince(video.createdAt)} назад</span>
           </p>
         </div>
       </div>
